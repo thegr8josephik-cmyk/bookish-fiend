@@ -1,5 +1,5 @@
 "use strict";
-const $=id=>document.getElementById(id),DB="cozy-reader",STORE="books";
+const $=id=>document.getElementById(id),DB="cozy-reader",STORE="books";       g
 let db,books=[],active=null,book=null,rendition=null,textPage=0,textPages=1,mediaUrl=null,touchX=0;
 let fontSize=Number(localStorage.getItem("cozy-font-size")||1.16),appearance=localStorage.getItem("cozy-appearance")||"light";
 function toast(message){const el=$("toast");el.textContent=message;el.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove("show"),2500)}
